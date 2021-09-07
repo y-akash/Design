@@ -1,0 +1,17 @@
+L => Liskov Substitution Principle (LSP)
+
+
+As per the Liskov Substitution Principle
+    1. Substitutability is a principle in object-oriented programming and it states that, in a computer program, 
+       if S is a Subtype of T, then objects of type T may be replaced with objects of type S 
+    2. Which means, Derived types must be completely substitutable for their base types
+    3. More formally, the Liskov substitution principle (LSP) is a particular definition of a subtyping relation, 
+       called (strong) behavioral subtyping
+    4. This principle is just an extension of the Open Close Principle
+
+
+
+Implementation guidelines : In the process of development we should ensure that  
+    1. No new exceptions can be thrown by the subtype unless they are part of the existing exception hierarchy.
+    2. We should also ensure that Clients should not know which specific subtype they are calling, nor should they need to know that. The client should behave the same regardless of the subtype instance that it is given.
+    3. And last but not the least, New derived classes just extend without replacing the functionality of old classes
